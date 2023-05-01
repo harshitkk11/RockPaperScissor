@@ -32,13 +32,11 @@ while rounds < 5:
             print("Your Score : " + str(user_score) + "| Computer score : " + str(computer_score) + "\n....You Win....\n")
 
         # When no one wins
-        elif ((user_input == "rock") and (computer_guess == "rock")) or \
-                ((user_input == "paper") and (computer_guess == "paper")) or \
-                ((user_input == "scissors") and (computer_guess == "scissors")):
+        else:
             print("Your Score : " + str(user_score) + "| Computer score : " + str(computer_score) + "\n....Tie....\n")
 
     else:
-        print("Type a valid option.")
+        print("Type a valid option.\n")
 
 if user_score > computer_score:
     print("Congrats, You won this game!!")
